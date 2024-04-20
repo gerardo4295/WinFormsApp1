@@ -29,6 +29,8 @@ Partial Class Form1
         PictureBox3 = New PictureBox()
         PictureBox4 = New PictureBox()
         PictureBox5 = New PictureBox()
+        Label1 = New Label()
+        Panel1 = New Panel()
         CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
         CType(PictureBox2, ComponentModel.ISupportInitialize).BeginInit()
         CType(PictureBox3, ComponentModel.ISupportInitialize).BeginInit()
@@ -97,12 +99,33 @@ Partial Class Form1
         PictureBox5.TabIndex = 6
         PictureBox5.TabStop = False
         ' 
+        ' Label1
+        ' 
+        Label1.AutoSize = True
+        Label1.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point)
+        Label1.ForeColor = Color.FromArgb(CByte(188), CByte(199), CByte(196))
+        Label1.Location = New Point(86, 65)
+        Label1.Name = "Label1"
+        Label1.Size = New Size(117, 21)
+        Label1.TabIndex = 7
+        Label1.Text = "Food Delivery"
+        ' 
+        ' Panel1
+        ' 
+        Panel1.BackColor = Color.FromArgb(CByte(51), CByte(51), CByte(51))
+        Panel1.Location = New Point(0, 407)
+        Panel1.Name = "Panel1"
+        Panel1.Size = New Size(282, 42)
+        Panel1.TabIndex = 8
+        ' 
         ' Form1
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
         BackColor = Color.FromArgb(CByte(84), CByte(86), CByte(91))
         ClientSize = New Size(282, 450)
+        Controls.Add(Panel1)
+        Controls.Add(Label1)
         Controls.Add(PictureBox5)
         Controls.Add(PictureBox4)
         Controls.Add(PictureBox3)
@@ -126,4 +149,6 @@ Partial Class Form1
     Friend WithEvents PictureBox3 As PictureBox
     Friend WithEvents PictureBox4 As PictureBox
     Friend WithEvents PictureBox5 As PictureBox
+    Friend WithEvents Label1 As Label
+    Friend WithEvents Panel1 As Panel
 End Class
