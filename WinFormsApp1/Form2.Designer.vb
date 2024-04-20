@@ -33,6 +33,7 @@ Partial Class Form2
         Panel2 = New Panel()
         Button1 = New Button()
         NumericUpDown1 = New NumericUpDown()
+        Button2 = New Button()
         CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
         Panel1.SuspendLayout()
         Panel2.SuspendLayout()
@@ -141,12 +142,22 @@ Partial Class Form2
         NumericUpDown1.Size = New Size(120, 23)
         NumericUpDown1.TabIndex = 0
         ' 
+        ' Button2
+        ' 
+        Button2.Location = New Point(12, 10)
+        Button2.Name = "Button2"
+        Button2.Size = New Size(59, 23)
+        Button2.TabIndex = 2
+        Button2.Text = "Back"
+        Button2.UseVisualStyleBackColor = True
+        ' 
         ' Form2
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
         BackColor = Color.FromArgb(CByte(84), CByte(86), CByte(91))
         ClientSize = New Size(272, 450)
+        Controls.Add(Button2)
         Controls.Add(Panel2)
         Controls.Add(Panel1)
         Controls.Add(Label2)
@@ -173,4 +184,5 @@ Partial Class Form2
     Friend WithEvents Panel2 As Panel
     Friend WithEvents Button1 As Button
     Friend WithEvents NumericUpDown1 As NumericUpDown
+    Friend WithEvents Button2 As Button
 End Class

@@ -26,6 +26,7 @@ Partial Class Form3
         RadioButton2 = New RadioButton()
         RadioButton3 = New RadioButton()
         Button1 = New Button()
+        Button2 = New Button()
         SuspendLayout()
         ' 
         ' RadioButton1
@@ -70,8 +71,17 @@ Partial Class Form3
         Button1.Name = "Button1"
         Button1.Size = New Size(75, 23)
         Button1.TabIndex = 3
-        Button1.Text = "Button1"
+        Button1.Text = "Continue"
         Button1.UseVisualStyleBackColor = True
+        ' 
+        ' Button2
+        ' 
+        Button2.Location = New Point(12, 415)
+        Button2.Name = "Button2"
+        Button2.Size = New Size(75, 23)
+        Button2.TabIndex = 4
+        Button2.Text = "Back"
+        Button2.UseVisualStyleBackColor = True
         ' 
         ' Form3
         ' 
@@ -79,6 +89,7 @@ Partial Class Form3
         AutoScaleMode = AutoScaleMode.Font
         BackColor = Color.FromArgb(CByte(84), CByte(86), CByte(91))
         ClientSize = New Size(250, 450)
+        Controls.Add(Button2)
         Controls.Add(Button1)
         Controls.Add(RadioButton3)
         Controls.Add(RadioButton2)
@@ -93,4 +104,5 @@ Partial Class Form3
     Friend WithEvents RadioButton2 As RadioButton
     Friend WithEvents RadioButton3 As RadioButton
     Friend WithEvents Button1 As Button
+    Friend WithEvents Button2 As Button
 End Class
